@@ -10,13 +10,6 @@ El algoritmo de las luciérnagas es una técnica de optimización inspirada en e
 
 Nuestro objetivo es implementar y demostrar la efectividad del algoritmo de las luciérnagas en la resolución del problema planteado. Aunque el problema aún no ha sido definido, se espera que sea un desafío relevante en el campo de la optimización o la inteligencia artificial.
 
-## Estructura del Proyecto
-
-- **/src**: Contendrá el código fuente y la implementación del algoritmo de las luciérnagas.
-- **/data**: Directorio reservado para los conjuntos de datos que se utilizarán en la prueba del algoritmo.
-- **/results**: Aquí se guardarán los resultados de las ejecuciones y las evaluaciones del algoritmo.
-- **README.md**: Este archivo, que proporciona una visión general del proyecto y su propósito.
-
 ## Estado Actual
 
 - Definición del problema: **En progreso**
@@ -27,15 +20,3 @@ Nuestro objetivo es implementar y demostrar la efectividad del algoritmo de las 
 1. Definir el problema específico a resolver.
 2. Implementar la primera versión del algoritmo de las luciérnagas.
 3. Probar el algoritmo en el problema definido y evaluar los resultados.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si tienes ideas o sugerencias sobre problemas interesantes que podrían resolverse con el algoritmo de las luciérnagas, no dudes en crear un issue o enviar un pull request.
-
-## Contacto
-
-Para cualquier consulta o sugerencia, puedes contactarnos a través de nuestro repositorio o enviando un correo electrónico a [tuemail@example.com].
-
----
-
-¡Gracias por visitar nuestro proyecto! Estamos emocionados de explorar el potencial del algoritmo de las luciérnagas en la resolución de problemas complejos.
