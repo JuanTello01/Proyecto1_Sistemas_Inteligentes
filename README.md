@@ -1,22 +1,28 @@
-# Proyecto: Solución de Problemas con el Algoritmo de las Luciérnagas
+# Proyecto: Solución del Problema del Viajante con el Algoritmo de las Luciérnagas
 
-Este repositorio está diseñado para mostrar la solución de un problema planteado por nuestro equipo, utilizando el **algoritmo de las luciérnagas**. Actualmente, estamos en la fase de definición del problema específico a resolver. Sin embargo, nuestro enfoque principal será aplicar este algoritmo para explorar y optimizar la solución de manera eficiente.
+Este repositorio está diseñado para mostrar la solución al **Problema del Viajante** utilizando el **algoritmo de las luciérnagas**. En la fase inicial, proporcionaremos una introducción detallada al problema y prepararemos los datos necesarios para la implementación futura del algoritmo.
 
 ## Descripción
 
-El algoritmo de las luciérnagas es una técnica de optimización inspirada en el comportamiento natural de las luciérnagas y su capacidad para atraer a otras luciérnagas mediante la emisión de luz. Este algoritmo es útil para resolver problemas de optimización complejos debido a su capacidad para escapar de óptimos locales y encontrar soluciones más cercanas al óptimo global.
-
-## Objetivo
-
-Nuestro objetivo es implementar y demostrar la efectividad del algoritmo de las luciérnagas en la resolución del problema planteado. Aunque el problema aún no ha sido definido, se espera que sea un desafío relevante en el campo de la optimización o la inteligencia artificial.
+El **algoritmo de las luciérnagas** es una técnica de optimización inspirada en el comportamiento de las luciérnagas. En este proyecto, utilizaremos este algoritmo para resolver el **Problema del Viajante (TSP)**. El TSP es un problema de optimización combinatoria que busca encontrar la ruta más corta posible que permita a un viajante visitar un conjunto de ciudades exactamente una vez y regresar al punto de partida.
 
 ## Estado Actual
 
-- Definición del problema: **En progreso**
-- Implementación del algoritmo de las luciérnagas: **Pendiente**
+- **Introducción al Problema**: La introducción detallada al problema del viajante se encuentra en un archivo en formato LaTeX que será subido próximamente.
+- **Dataset**: El dataset relacionado con el problema del viajante también se subirá al repositorio antes del martes.
+
+## Archivos Disponibles
+
+1. **Introducción al Problema**: Un archivo en formato LaTeX que proporciona una visión general del Problema del Viajante, incluyendo el contexto, la importancia y el enfoque de solución.
+2. **Dataset**: Archivo con los datos necesarios para abordar el Problema del Viajante. 
 
 ## Próximos Pasos
 
-1. Definir el problema específico a resolver.
-2. Implementar la primera versión del algoritmo de las luciérnagas.
-3. Probar el algoritmo en el problema definido y evaluar los resultados.
+1. Subir el archivo en LaTeX con la introducción al problema.
+2. Subir el dataset relacionado.
+3. Implementar la primera versión del algoritmo de las luciérnagas.
+4. Probar el algoritmo con el dataset proporcionado y evaluar los resultados.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, por favor, realiza un fork del repositorio y envía un pull request con tus sugerencias o mejoras. También puedes abrir un issue para discutir posibles problemas o nuevas ideas.
