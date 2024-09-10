@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{url}  % Paquete necesario para los enlaces
+
+\title{El Problema del Viajante Resuelto con el Bioalgoritmo de las Luciérnagas}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+El Problema del Viajante (TSP) es uno de los problemas más estudiados en la teoría de la optimización combinatoria. El objetivo es encontrar la ruta más corta posible que permita a un viajante visitar un conjunto de ciudades exactamente una vez y regresar al punto de origen. Este problema pertenece a la clase NP-difícil, lo que significa que no existe un algoritmo eficiente conocido para resolverlo en tiempo polinómico para todas las instancias.
+
+El TSP tiene aplicaciones prácticas en logística, planificación de rutas y diseño de circuitos. Dada la cantidad exponencial de rutas posibles conforme aumenta el número de ciudades, encontrar una solución óptima es un desafío computacional significativo.
+
+\section{¿Por qué este problema y no otro?}
+El TSP ha sido elegido por varias razones:
+
+\begin{itemize}
+    \item \textbf{Relevancia Práctica}: La optimización de rutas es crucial en áreas como la logística y la planificación de rutas de transporte. Resolver el TSP puede mejorar la eficiencia en la gestión de recursos y reducir costos operativos.
+    \item \textbf{Desafío Computacional}: Su naturaleza NP-difícil lo convierte en un banco de pruebas ideal para nuevas técnicas de optimización como el algoritmo de las luciérnagas.
+    \item \textbf{Aplicación del Algoritmo}: El algoritmo de las luciérnagas es adecuado para problemas de optimización complejos y multimodales como el TSP.
+\end{itemize}
+
+\section{Herramientas a Utilizar}
+El \textit{Algoritmo de las Luciérnagas} es un método bioinspirado que se basa en el comportamiento de las luciérnagas para encontrar soluciones óptimas en problemas de optimización. Se utilizarán las siguientes herramientas:
+
+\begin{itemize}
+    \item \textbf{Lenguaje de programación}: Python, por su facilidad para implementar algoritmos de optimización y por la variedad de bibliotecas que ofrece.
+    \item \textbf{Entorno de desarrollo}: Se usará Jupyter Notebook para implementar y probar el algoritmo de las luciérnagas.
+    \item \textbf{Dataset}: Un conjunto de ciudades y las distancias entre ellas, facilitado para resolver el problema mediante el algoritmo.
+\end{itemize}
+
+\section{Modelo Matemático del Problema del Viajante}
+El Problema del Viajante (TSP) se puede formular matemáticamente como sigue:
+
+\begin{itemize}
+    \item Un conjunto de \( n \) ciudades \( C = \{c_1, c_2, \dots, c_n\} \)
+    \item Una matriz de distancias \( D \), donde \( D_{ij} \) representa la distancia entre las ciudades \( c_i \) y \( c_j \)
+\end{itemize}
+
+El objetivo es minimizar la función de costo:
+\[
+Z = \sum_{i=1}^{n}\sum_{j=1}^{n} D_{ij} \cdot X_{ij}
+\]
+Donde:
+\begin{itemize}
+    \item \( X_{ij} \) es una variable binaria que toma el valor 1 si el viajante viaja de la ciudad \( i \) a la ciudad \( j \), y 0 en caso contrario.
+\end{itemize}
+
+\subsection{Restricciones}
+El modelo debe cumplir las siguientes restricciones:
+\begin{itemize}
+    \item Cada ciudad debe ser visitada exactamente una vez.
+    \item Se deben eliminar subciclos para evitar trayectorias no deseadas.
+\end{itemize}
+
+\section{Optimización con el Algoritmo de las Luciérnagas}
+El comportamiento del algoritmo se basa en la siguiente formulación:
+
+\[
+x_i(t+1) = x_i(t) + \beta e^{-\gamma d_{ij}} (x_j(t) - x_i(t)) + \alpha \cdot rand
+\]
+
+Donde:
+\begin{itemize}
+    \item \( x_i(t) \) es la posición de la luciérnaga \( i \) en el tiempo \( t \).
+    \item \( \beta \) es la intensidad de atracción.
+    \item \( \gamma \) es el coeficiente de absorción de luz.
+    \item \( d_{ij} \) es la distancia entre las luciérnagas \( i \) y \( j \).
+    \item \( \alpha \) es el factor de aleatoriedad.
+    \item \( rand \) es un término aleatorio.
+\end{itemize}
+
+Este algoritmo permite explorar el espacio de soluciones de manera eficiente, evitando quedarse atrapado en óptimos locales.
+
+\section{Soluciones Propuestas}
+Para abordar el TSP, existen dos formulaciones comunes: la formulación MTZ (Miller, Tucker y Zemlin) y la formulación DFJ (Dantzig, Fulkerson y Johnson).
+
+\subsection{Formulación MTZ}
+La formulación MTZ busca minimizar el costo total del viaje, sujetándose a restricciones de no generar subciclos.
+
+\[
+\min \sum_{i=1}^{n} \sum_{j=1}^{n} c_{ij} x_{ij}
+\]
+
+\subsection{Formulación DFJ}
+La formulación DFJ impone restricciones adicionales para evitar sub-recorridos y generar una única solución continua.
+
+\[
+\min \sum_{i=1}^{n} \sum_{j=1}^{n} c_{ij} x_{ij}
+\]
+
+Las tres primeras restricciones aseguran que cada ciudad sea visitada exactamente una vez.
+
+\section{Relación con el Dataset}
+El dataset de ciudades de la India proporcionado es ideal para instanciar el Problema del Viajante. Cada ciudad representa un nodo en el grafo, y las distancias entre ellas se pueden calcular utilizando métricas como la distancia euclidiana. Estos valores alimentan directamente el algoritmo de las luciérnagas para resolver el TSP, permitiendo encontrar la ruta más corta que visita todas las ciudades una vez.
+
+El conjunto de datos ofrece una representación real de los desafíos logísticos que enfrenta el TSP, lo que refuerza la aplicación práctica de este algoritmo bioinspirado.
+
+\section{Referencias}
+
+- González-Santander, G. "Tres métodos diferentes para resolver el problema del viajante." \textit{Baobab Soluciones}, 1 de octubre de 2020. Disponible en: \url{https://baobabsoluciones.es/blog/2020/10/01/problema-del-viajante/}.
+
+- "Problema del viajante." \textit{Wikipedia, la enciclopedia libre}, 8 de septiembre de 2024. Disponible en: \url{https://es.wikipedia.org/wiki/Problema_del_viajante}.
+
+- Vázquez, J. "Revisión de los Algoritmos Bioinspirados." \textit{Universidad Nacional Autónoma de México}, julio de 2014. Disponible en: \url{https://www.fis.unam.mx/~javazquez/files/Met_num/Algoritmosbioinspiradosfinal.pdf}.
+
+- Wikipedia. (n.d.). \textit{Algoritmo firefly}. Recuperado el 8 de septiembre de 2024, de \url{https://es.wikipedia.org/wiki/Algoritmo_firefly}.
+
+- Visión electrónica. (2021). \textit{Firefly algorithm for facility layout problem optimization}. \textit{15}(2), 218–225. \url{https://doi.org/10.14483/22484728.17474}.
+
+\end{document}
