@@ -8,17 +8,15 @@ El **algoritmo de las luciérnagas** es una técnica de optimización inspirada 
 
 ## Estado Actual
 
-- **Introducción al Problema**: La introducción detallada al problema del viajante se encuentra en un archivo en formato LaTeX que será subido próximamente.
+- **Introducción al Problema**: La introducción detallada al problema del viajante se encuentra en un archivo en formato pdf que será subido próximamente.
 - **Dataset**: El dataset relacionado con el problema del viajante también se subirá al repositorio antes del martes.
 
 ## Archivos Disponibles
 
-1. **Introducción al Problema**: Un archivo en formato LaTeX que proporciona una visión general del Problema del Viajante, incluyendo el contexto, la importancia y el enfoque de solución.
+1. **Introducción al Problema**: Un archivo en formato pdf que proporciona una visión general del Problema del Viajante, incluyendo el contexto, la importancia y el enfoque de solución.
 2. **Dataset**: Archivo con los datos necesarios para abordar el Problema del Viajante. 
 
 ## Próximos Pasos
 
-1. Subir el archivo en LaTeX con la introducción al problema.
-2. Subir el dataset relacionado.
-3. Implementar la primera versión del algoritmo de las luciérnagas.
-4. Probar el algoritmo con el dataset proporcionado y evaluar los resultados.
+1. Implementar la primera versión del algoritmo de las luciérnagas.
+2. Probar el algoritmo con el dataset proporcionado y evaluar los resultados.
